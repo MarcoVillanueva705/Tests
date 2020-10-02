@@ -16,7 +16,7 @@ namespace Tests
             //has a dynamic length with type interger
             //List is in the generic collection, generic in
             //the sense that it can be a list of any specified type
-            var numbers = new List<int> { 1,2,3,4 };
+            var numbers = new List<int> { 1, 2, 3, 4 };
 
             //The thing to confirm using the Assert statement is True.
             //is whether numbers is in fact IEnumerable
@@ -33,6 +33,24 @@ namespace Tests
             var e = numbers.GetEnumerator();
             //We're saying 'numbers' as a collections is enumberable
             Assert.IsTrue(e is IEnumerator<int>);
+
+            //GetEnumerator returns an IEnumerator of 'T'
+            //'T' is an interger in this case   
+            //With an enumerator, we can now ask it to actually
+            //walk us through the elements in this collection
+
+            //First question is if we have any data at all
+
+            bool hasData = e.MoveNext();
+            Assert.IsTrue(hasData);
+            //if enumeator 'hasData' returns true, there's data
+
+            //Where is the data?
+            //It's on that enumerator, in a property called
+            //'Current
+
+            int i = e.Current; 
         }
+
     }
 }
