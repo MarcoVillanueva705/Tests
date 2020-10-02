@@ -47,7 +47,7 @@ namespace Tests
 
             //Where is the data?
             //It's on that enumerator, in a property called
-            //'Current
+            //'Current, listed below
 
             int i = e.Current; 
         }
