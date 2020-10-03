@@ -49,6 +49,7 @@ namespace Tests
             //It's on that enumerator, in a property called
             //'Current, listed below
 
+            //start here tomorrow
             int i = e.Current; 
         }
 
