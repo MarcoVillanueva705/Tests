@@ -12,7 +12,7 @@ namespace Tests
             //IEnumerable: the ability to go through all of the elements
             //one at a time
 
-            //Listbehaves similar to an array, but list
+            //List behaves similar to an array, but list
             //has a dynamic length with type interger
             //List is in the generic collection, generic in
             //the sense that it can be a list of any specified type
@@ -52,6 +52,9 @@ namespace Tests
             //start here tomorrow
             int i = e.Current;
             Assert.IsTrue(i == 1);
+
+            //point of the test was to show that the numbers
+            //collection can provide an enumerator
         }
 
     }
