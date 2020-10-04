@@ -50,7 +50,8 @@ namespace Tests
             //'Current, listed below
 
             //start here tomorrow
-            int i = e.Current; 
+            int i = e.Current;
+            Assert.IsTrue(i == 1);
         }
 
     }
